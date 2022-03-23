@@ -31,7 +31,7 @@ There are currently 4 flows:
 - processGuestPayment - Process Card Details & Stores Card Details if merchant ref supplied.
 - requestVerify - Validates Card Details & Stores Card Details if merchant ref supplied.
 - processTokenPayment - Processes a payment with the card token.
-- processGooglePayResponse - Processes Google Pay payment, requires Google Pay
+- processApplePayResponse - Processes Apple Pay payment, requires Apple Pay
 
 Examples of all flows can be seen in the sample app.
 
@@ -133,11 +133,6 @@ payment.address = billingAddress
 payment.customer = customer
 
 ```
-
-The constructor of the payment takes in two arguements:
-
-- `PPOPaymentDelegate` - You must implement this delegate class and pass as the first argument.
-- `Context` - Android Application Context
 
 8. Taking Payment
 
